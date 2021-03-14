@@ -190,7 +190,7 @@ class Committees extends Component {
                                     <th className="hide">Numero acta</th>
                                     <th className="hide">Hora</th>
                                     <th className="hide-md">Lugar</th>
-                                    <th className="hide">Centro de Formacion</th>
+                                    <th className="hide">Centro de Formación</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
