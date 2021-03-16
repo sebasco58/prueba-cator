@@ -19,8 +19,8 @@ class Committees extends Component {
             edit: false,
             message: null,
             rules,
-            subdirector: null,
-            coordinador: null,
+            subdirector: [],
+            coordinador: [],
             place: null,
             formation_center: null
         };
@@ -163,7 +163,7 @@ class Committees extends Component {
     }
     render() {
         const { rules } = this.state;
-        if (!this.state.committes || !this.state.formation_center || !this.state.place) {
+        if (!this.state.committes || !this.state.subdirector || !this.state.coordinador || !this.state.formation_center || !this.state.place) {
             return <Loader />;
         }
         return (
