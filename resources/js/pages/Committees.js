@@ -20,7 +20,7 @@ class Committees extends Component {
             message: null,
             rules,
             subdirector: null,
-            coordinador: null,
+            coordinador: [],
             place: null,
             formation_center: null
         };
