@@ -18,7 +18,7 @@ class CommitteeSession extends Component {
         super(props);
         this.state = {
             id: this.props.match.params.id,
-            committeeSession: null,
+            committeeSession: [],
             committeeSessionState: null,
             infringementTypes: null,
             infringementClassifications: null,
