@@ -14,15 +14,15 @@ class Committees extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            committes: null,
+            committes: [],
             id: null,
             edit: false,
             message: null,
             rules,
-            subdirector: null,
-            coordinador: null,
-            place: null,
-            formation_center: null
+            subdirector: [],
+            coordinador: [],
+            place: [],
+            formation_center: []
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -162,6 +162,10 @@ class Committees extends Component {
         this.getGeneralParameters();
     }
     render() {
+        const { rules } = this.state;
+        if (!this.state.committes || !this.state.subdirector || !this.state.coordinador || !this.state.formation_center || !this.state.place) {
+            return <Loader />;
+        }
         return (
             <div>
                 <div className="row">
