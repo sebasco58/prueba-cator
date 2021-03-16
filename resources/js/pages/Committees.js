@@ -20,7 +20,7 @@ class Committees extends Component {
             message: null,
             rules,
             subdirector: null,
-            coordinador: [],
+            coordinador: null,
             place: null,
             formation_center: null
         };
@@ -119,6 +119,7 @@ class Committees extends Component {
         $('.modal').find('#place').val(data.place);
         $('.modal').find('#formation_center').val(data.formation_center);
         $('.modal').find('#subdirector_name').val(data.subdirector_name);
+        $('.modal').find('#coordinador_name').val(data.coordinador_name);
         $('.modal').modal('toggle');
     }
 
