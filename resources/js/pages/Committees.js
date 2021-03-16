@@ -162,10 +162,6 @@ class Committees extends Component {
         this.getGeneralParameters();
     }
     render() {
-        const { rules } = this.state;
-        if (!this.state.committes || !this.state.subdirector || !this.state.coordinador || !this.state.formation_center) {
-            return <Loader />;
-        }
         return (
             <div>
                 <div className="row">
