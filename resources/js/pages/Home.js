@@ -185,30 +185,6 @@ class Home extends Component {
                         </table>
                     </div>
                 </div>
-                <div className="row mt-1">
-                    <div className="col-12 col-lg-6 mb-1">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5>Total de casos academicos por mes</h5>
-                                <DoughnutChart
-                                    label=""
-                                />
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="col-12 col-lg-6">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5>Total de grupos por progarmade formacion</h5>
-                                <LineChart
-                                    label={'Grupos'}
-                                    color={'rgba(54, 162, 235, 0.2)'}
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </>
         )
     }
