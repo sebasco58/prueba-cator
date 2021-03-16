@@ -163,7 +163,7 @@ class Committees extends Component {
     }
     render() {
         const { rules } = this.state;
-        if (!this.state.committes || this.state.subdirector) {
+        if (!this.state.committes || !this.state.subdirector || !this.state.coordinador) {
             return <Loader />;
         }
         return (
