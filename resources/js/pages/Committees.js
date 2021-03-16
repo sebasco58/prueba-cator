@@ -14,15 +14,15 @@ class Committees extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            committes: [],
+            committes: null,
             id: null,
             edit: false,
             message: null,
             rules,
-            subdirector: null,
-            coordinador: null,
-            place: [],
-            formation_center: []
+            subdirector: [],
+            coordinador: [],
+            place: null,
+            formation_center: null
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
