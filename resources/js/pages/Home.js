@@ -22,12 +22,12 @@ class Home extends Component {
             allDisciplinary: [],
             allAcademicDisciplinary: [],
             allRetirement: [],
+            infringement_type: [],
         }
     }
 
     async getCommittes() {
         let data = await getAllCommittes();
-        let infringement_type;
         let academic = data.filter(sesion => sesion.infringement_type.name == "ACADEMICA");
         this.setState({ allAcademic: academic.length });
         let disciplinary = data.filter(sesion => sesion.infringement_type.name == "DISCIPLINARIA");
