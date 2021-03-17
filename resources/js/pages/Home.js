@@ -28,6 +28,7 @@ class Home extends Component {
 
     async getCommittes() {
         let data = await getAllCommittes();
+        let infringement_type;
         let academic = data.filter(sesion => sesion.infringement_type.name == "ACADEMICA");
         this.setState({ allAcademic: academic.length });
         let disciplinary = data.filter(sesion => sesion.infringement_type.name == "DISCIPLINARIA");
@@ -202,7 +203,7 @@ class Home extends Component {
                             <div className="card-body">
                                 <h5>Total de casos academicos por programa de formacion</h5>
                                 <LineChart
-                                    label={'Grupos'}
+                                    label={'Acedemicos'}
                                     color={'rgba(54, 162, 235, 0.2)'}
                                 />
                             </div>
