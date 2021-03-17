@@ -4,7 +4,6 @@ import { getAll} from '../containers/LearnerNovelties';
 import LineChart from '../components/LineChart';
 import DoughnutChart from '../components/DoughnutChart';
 import { Link } from "react-router-dom";
-import moment from 'moment';
 import DataTable from '../components/DataTable';
 
 class Home extends Component {
