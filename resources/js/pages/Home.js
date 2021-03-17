@@ -22,7 +22,6 @@ class Home extends Component {
             allDisciplinary: [],
             allAcademicDisciplinary: [],
             allRetirement: [],
-            infringement_type: [],
         }
     }
 
