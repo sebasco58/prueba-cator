@@ -40,22 +40,23 @@ class Committees extends Component {
 
     async getSubdirectors() {
         let data = await getByRol(4);
-        for (let i = 0; i < data.users.length; i++) {
-            if (data.users[i].is_active === 1) {
-                this.setState({ subdirector: data.users[i] })
-                console.log("hay algo en subd");
-            }
-        }
+        this.setState({ subdirector: data.users[4] })
+        // for (let i = 0; i < data.users.length; i++) {
+        //     if (data.users[i].is_active === 1) {
+        //         this.setState({ subdirector: data.users[i] })
+        //         console.log("hay algo en subd");
+        //     }
+        // }
     }
     async getCoordinadores() {
         let data = await getByRol(3);
-
-        for (let i = 0; i < data.users.length; i++) {
-            if (data.users[i].is_active === 1) {
-                this.setState({ coordinador: data.users[i] })
-                console.log("Hay hago en coor");
-            }
-        }
+        this.setState({ coordinador: data.users[3] })
+        // for (let i = 0; i < data.users.length; i++) {
+        //     if (data.users[i].is_active === 1) {
+        //         this.setState({ coordinador: data.users[i] })
+        //         console.log("Hay hago en coor");
+        //     }
+        // }
     }
 
     async getGeneralParameters(){
