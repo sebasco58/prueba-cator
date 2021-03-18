@@ -42,7 +42,7 @@ class Committees extends Component {
         let data = await getByRol(4);
         for (let i = 0; i < data.users.length; i++) {
             if (data.users[i].is_active === 1) {
-                this.setState({ subdirector: data.users[i] });
+                console.log(this.setState({ subdirector: data.users[i] }));
             }
         }
     }
@@ -51,7 +51,7 @@ class Committees extends Component {
 
         for (let i = 0; i < data.users.length; i++) {
             if (data.users[i].is_active === 1) {
-                this.setState({ coordinador: data.users[i] });
+                console.log(this.setState({ coordinador: data.users[i] }));
             }
         }
     }
