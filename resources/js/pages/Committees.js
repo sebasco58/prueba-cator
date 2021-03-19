@@ -39,7 +39,7 @@ class Committees extends Component {
     }
 
     async getSubdirectors() {
-        this.setState({ subdirector: null });
+        this.setState({ subdirector: [] });
         let data = await getByRol(4);
         for (let i = 0; i < data.users.length; i++) {
             if (data.users[i].is_active === 1) {
@@ -48,7 +48,7 @@ class Committees extends Component {
         }
     }
     async getCoordinadores() {
-        this.setState({ coordinador: null });
+        this.setState({ coordinador: [] });
         let data = await getByRol(3);
         for (let i = 0; i < data.users.length; i++) {
             if (data.users[i].is_active === 1) {
