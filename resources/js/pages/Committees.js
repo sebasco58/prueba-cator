@@ -40,11 +40,7 @@ class Committees extends Component {
 
     async getSubdirectors() {
         let data = await getByRol(4);
-        for (let i = 0; i < data.users.length; i++) {
-            if (data.users[i].is_active === 1) {
-                this.setState({ subdirector: data.users[i] })
-            }
-        }
+        this.setState({ subdirector: data.users[4] })
     }
     async getCoordinadores() {
         let data = await getByRol(3);
