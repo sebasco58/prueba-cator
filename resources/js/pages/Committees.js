@@ -378,7 +378,7 @@ class Committees extends Component {
                                                     </div>
                                                     <div className="col">
                                                         <label htmlFor="">
-                                                            Hora fin
+                                                            Hora Fin
                                                         </label>
                                                         <input
                                                             type="time"
