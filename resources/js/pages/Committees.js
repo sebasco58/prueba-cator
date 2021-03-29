@@ -19,7 +19,7 @@ class Committees extends Component {
             edit: false,
             message: null,
             rules,
-            subdirector: null,
+            subdirector: [],
             coordinador: [],
             place: null,
             formation_center: null
@@ -40,7 +40,11 @@ class Committees extends Component {
 
     async getSubdirectors() {
         let data = await getByRol(4);
-        this.setState({ subdirector: data.users[4] })
+        for (let i = 0; i < data.users.length; i++) {
+            if (data.users[i].is_active === 1) {
+                this.setState({ subdirector: data.users[i] })
+            }
+        }
     }
     async getCoordinadores() {
         let data = await getByRol(3);
