@@ -488,7 +488,7 @@ class Committees extends Component {
                                                                 *
                                                             </span>
                                                         </label>
-                                                        <input type="text" name="coordinador_name" id="coordinador_name" className="form-control" defaultValue={this.state.coordinador.name} />
+                                                        <input type="text" name="coordinador_name" id="coordinador_name" className="form-control" defaultValue="Cordinador User" />
                                                         <div className="invalid-feedback">
                                                             {rules.coordinador_name
                                                                 .isInvalid &&
