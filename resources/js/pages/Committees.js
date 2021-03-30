@@ -470,7 +470,7 @@ class Committees extends Component {
                                                                 *
                                                             </span>
                                                         </label>
-                                                        <input type="text" name="subdirector_name" id="subdirector_name" className="form-control" defaultValue={this.state.subdirector.name} />
+                                                        <input type="text" name="subdirector_name" id="subdirector_name" className="form-control" defaultValue="Subdirector User" />
                                                         <div className="invalid-feedback">
                                                             {rules.subdirector_name
                                                                 .isInvalid &&
