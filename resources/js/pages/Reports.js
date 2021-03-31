@@ -264,7 +264,7 @@ class Reports extends Component {
                                                 <td>{allFormativeMeasure.responsibles ? (
                                                     allFormativeMeasure.responsibles.length <= 1 ? (
                                                         allFormativeMeasure.responsibles.map(responsible => (
-                                                            `${responsible.username}`
+                                                            `${responsible.pivot.formative_measure.name}`
                                                         ))
                                                     ) : (
                                                             <p>
